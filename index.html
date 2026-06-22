@@ -1,19 +1,237 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta charset="UTF-8">
-<title>MSCA-PATCH</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>PATCH Project</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+line-height:1.6;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+/* Navigation Bar */
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:#003366;
+padding:15px 0;
+z-index:1000;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+}
+
+nav ul li{
+margin:0 20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:#FFD700;
+}
+
+/* Hero Section */
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,0.5),
+rgba(0,0,0,0.5)),
+url('https://images.unsplash.com/photo-1532187643603-ba119ca4109e');
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-content h2{
+font-size:28px;
+font-weight:300;
+margin-bottom:30px;
+}
+
+.button{
+background:#FFD700;
+padding:12px 25px;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+}
+
+/* Sections */
+
+section{
+padding:80px 10%;
+}
+
+section h2{
+color:#003366;
+margin-bottom:20px;
+}
+
+footer{
+background:#003366;
+color:white;
+padding:30px;
+text-align:center;
+font-size:14px;
+}
+
+</style>
 </head>
 
 <body>
 
-<h1>MSCA-PATCH</h1>
+<!-- Navigation -->
 
-<h2>Plasmonic Nanoparticle Enhanced CuO/BiVO4 Heterojunctions for Photoelectrocatalytic Pollutant Degradation</h2>
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#objectives">Objectives</a></li>
+<li><a href="#workpackages">Work Packages</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<!-- Hero Section -->
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<h1>PATCH</h1>
+
+<h2>
+Plasmonic Nanoparticle Enhanced CuO/BiVO₄ Heterojunctions
+for Photoelectrocatalytic Pollutant Degradation
+</h2>
 
 <p>
-This is my Marie Skłodowska-Curie Postdoctoral Fellowship project website.
+Marie Skłodowska-Curie Postdoctoral Fellowship
 </p>
 
+<br>
+
+<a href="#about" class="button">Learn More</a>
+
+</div>
+
+</section>
+
+<!-- About -->
+
+<section id="about">
+
+<h2>About the Project</h2>
+
+<p>
+PATCH aims to develop plasmonic nanoparticle-enhanced
+CuO/BiVO₄ heterojunction photoelectrodes for efficient
+solar-driven photoelectrocatalytic degradation of pollutants.
+The project combines pulsed laser ablation in liquids (PLAL),
+advanced spectroscopy, and photoelectrochemistry.
+</p>
+
+</section>
+
+<!-- Objectives -->
+
+<section id="objectives">
+
+<h2>Project Objectives</h2>
+
+<ul>
+
+<li>Green synthesis of nanoparticles using PLAL</li>
+
+<li>Fabrication of CuO/BiVO₄ heterojunctions</li>
+
+<li>Integration of plasmonic Au nanoparticles</li>
+
+<li>Charge transfer studies using SPV and PCS</li>
+
+<li>Photoelectrocatalytic degradation of pollutants</li>
+
+</ul>
+
+</section>
+
+<!-- Work Packages -->
+
+<section id="workpackages">
+
+<h2>Work Packages</h2>
+
+<p><b>WP1:</b> Synthesis and Integration</p>
+
+<p><b>WP2:</b> Characterization and Charge Transfer Studies</p>
+
+<p><b>WP3:</b> Photoelectrocatalytic Performance</p>
+
+<p><b>WP4:</b> Project Management</p>
+
+<p><b>WP5:</b> Training</p>
+
+<p><b>WP6:</b> Dissemination and Communication</p>
+
+</section>
+
+<!-- Contact -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>
+<b>Dr. Prahlad Baruah</b><br>
+Marie Skłodowska-Curie Fellow<br>
+Université Claude Bernard Lyon 1
+</p>
+
+</section>
+
+<footer>
+
+Funded by the European Union under the Marie Skłodowska-Curie Actions
+(MSCA), Horizon Europe Programme.
+
+</footer>
+
 </body>
+
 </html>
