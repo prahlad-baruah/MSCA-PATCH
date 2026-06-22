@@ -24,6 +24,49 @@ html{
 scroll-behavior:smooth;
 }
 
+/* Team Section */
+
+.team-container{
+display:flex;
+justify-content:center;
+gap:40px;
+flex-wrap:wrap;
+margin-top:40px;
+}
+
+.team-card{
+background:white;
+padding:25px;
+border-radius:15px;
+width:350px;
+min-height:540px;
+text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.team-card:hover{
+transform:translateY(-8px);
+}
+
+.team-card img{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:50%;
+margin-bottom:15px;
+border:4px solid #003366;
+}
+
+.team-card h3{
+color:#003366;
+margin-bottom:10px;
+}
+
+.team-card p{
+font-size:15px;
+}
+
 /* Navigation Bar */
 
 nav{
@@ -124,6 +167,7 @@ font-size:14px;
 <li><a href="#about">About</a></li>
 <li><a href="#objectives">Objectives</a></li>
 <li><a href="#workpackages">Work Packages</a></li>
+<li><a href="#team">Team</a></li>
 <li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
@@ -134,7 +178,7 @@ font-size:14px;
 
 <div class="hero-content">
 
-<h1>PATCH</h1>
+<h1>PATCH Project</h1>
 
 <h2>
 Plasmonic Nanoparticle Enhanced CuO/BiVO₄ Heterojunctions
@@ -142,7 +186,9 @@ for Photoelectrocatalytic Pollutant Degradation
 </h2>
 
 <p>
-Marie Skłodowska-Curie Postdoctoral Fellowship
+Marie Skłodowska-Curie Actions Postdoctoral Fellowship
+<br>
+Université Claude Bernard Lyon 1
 </p>
 
 <br>
@@ -178,13 +224,9 @@ advanced spectroscopy, and photoelectrochemistry.
 <ul>
 
 <li>Green synthesis of nanoparticles using PLAL</li>
-
 <li>Fabrication of CuO/BiVO₄ heterojunctions</li>
-
 <li>Integration of plasmonic Au nanoparticles</li>
-
 <li>Charge transfer studies using SPV and PCS</li>
-
 <li>Photoelectrocatalytic degradation of pollutants</li>
 
 </ul>
@@ -198,16 +240,109 @@ advanced spectroscopy, and photoelectrochemistry.
 <h2>Work Packages</h2>
 
 <p><b>WP1:</b> Synthesis and Integration</p>
-
 <p><b>WP2:</b> Characterization and Charge Transfer Studies</p>
-
 <p><b>WP3:</b> Photoelectrocatalytic Performance</p>
-
 <p><b>WP4:</b> Project Management</p>
-
 <p><b>WP5:</b> Training</p>
-
 <p><b>WP6:</b> Dissemination and Communication</p>
+
+</section>
+
+<!-- Team -->
+
+<section id="team">
+
+<h2>PATCH Research Team</h2>
+
+<div class="team-container">
+
+<div class="team-card">
+
+<img src="images/prahlad.jpg" alt="Prahlad Baruah">
+
+<h3>Dr. Prahlad Baruah</h3>
+
+<p>
+Marie Skłodowska-Curie Postdoctoral Fellow
+</p>
+
+<p>
+Research Focus:
+<br>
+Plasmonic Nanomaterials
+<br>
+Laser Synthesis (PLAL)
+<br>
+CuO/BiVO₄ Heterojunctions
+<br>
+Photoelectrocatalytic Pollutant Degradation
+</p>
+
+</div>
+
+<div class="team-card">
+
+<img src="images/david.png" alt="David Amans">
+
+<h3>Prof. David Amans</h3>
+
+<p>
+Scientific Supervisor
+</p>
+
+<p>
+Research Focus:
+<br>
+Nanomaterials
+<br>
+Luminescence
+<br>
+Plasma Physics
+<br>
+Laser Ablation
+<br>
+Physical Chemistry
+</p>
+
+</div>
+
+<div class="team-card">
+
+<img src="images/arsene.jpg" alt="Arsène Chemine">
+
+<h3>Dr. Arsène Chemine</h3>
+
+<p>
+Co-Supervisor
+</p>
+
+<p>
+Research Focus:
+<br>
+Photo(electro)catalysis
+<br>
+Diamond
+<br>
+Interfaces
+<br>
+X-ray Spectroscopy
+<br>
+Synchrotrons
+</p>
+
+</div>
+
+</div>
+
+<p style="margin-top:40px;
+text-align:center;
+max-width:1000px;
+margin-left:auto;
+margin-right:auto;">
+
+The PATCH project is conducted at Université Claude Bernard Lyon 1 under the Marie Skłodowska-Curie Actions Postdoctoral Fellowship programme. The project brings together expertise in plasmonic nanomaterials, laser-based nanoparticle synthesis, advanced spectroscopy, semiconductor heterojunctions, and photoelectrocatalysis to develop sustainable solutions for water pollutant remediation.
+
+</p>
 
 </section>
 
@@ -219,18 +354,17 @@ advanced spectroscopy, and photoelectrochemistry.
 
 <p>
 <b>Dr. Prahlad Kumar Baruah</b><br>
-Marie Skłodowska-Curie Fellow<br>
+Marie Skłodowska-Curie Postdoctoral Fellow<br>
 Université Claude Bernard Lyon 1
 </p>
+
 </section>
 
 <footer>
 
-Funded by the European Union under the Marie Skłodowska-Curie Actions
-(MSCA), Horizon Europe Programme.
+Funded by the European Union under the Marie Skłodowska-Curie Actions (MSCA), Horizon Europe Programme.
 
 </footer>
 
 </body>
-
 </html>
