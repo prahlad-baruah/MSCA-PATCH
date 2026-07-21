@@ -2,17 +2,243 @@
 <html lang="en">
 
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>PATCH Project</title>
 
-<link rel="stylesheet" href="style.css">
+<style>
 
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Arial, Helvetica, sans-serif;
+line-height:1.6;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
+    <div class="social-icons">
+
+    <!-- LinkedIn -->
+    <a href="https://www.linkedin.com/in/dr-prahlad-kumar-baruah-3b188822/"
+       target="_blank" aria-label="LinkedIn">
+        <i class="fab fa-linkedin"></i>
+    </a>
+
+    <!-- Google Scholar -->
+    <a href="https://scholar.google.com/citations?user=-UROyDYAAAAJ&hl=en"
+       target="_blank" aria-label="Google Scholar">
+        <i class="ai ai-google-scholar"></i>
+    </a>
+
+    <!-- ResearchGate -->
+    <a href="https://www.researchgate.net/profile/Prahlad-Baruah?ev=hdr_xprf"
+       target="_blank" aria-label="ResearchGate">
+        <i class="fab fa-researchgate"></i>
+    </a>
+
+    <!-- ORCID -->
+    <a href="https://orcid.org/0000-0001-8826-9634"
+       target="_blank" aria-label="ORCID">
+        <i class="ai ai-orcid"></i>
+    </a>
+
+</div>
+.social-icons{
+    margin-top:25px;
+}
+
+.social-icons a{
+    color:white;          /* Use #0B3D91 if on a white background */
+    font-size:2rem;
+    margin:0 12px;
+    text-decoration:none;
+    transition:all 0.3s ease;
+}
+
+.social-icons a:hover{
+    color:#00c6ff;
+    transform:translateY(-4px) scale(1.1);
+}
+
+    
+/* Logo Bar */
+
+.logo-bar{
+background:white;
+padding:15px 20px;
+display:flex;
+justify-content:center;
+align-items:center;
+gap:200px;
+border-bottom:1px solid #ddd;
+}
+
+.logo-bar img{
+height:120px;
+width:auto;
+object-fit:contain;
+}
+
+/* Team Section */
+
+.team-container{
+display:flex;
+justify-content:center;
+align-items:stretch;
+gap:10px;
+flex-wrap:nowrap;
+margin-top:40px;
+}
+
+.team-card{
+background:white;
+padding:25px;
+border-radius:15px;
+width:350px;
+min-height:540px;
+text-align:center;
+box-shadow:0 4px 15px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.team-card:hover{
+transform:translateY(-8px);
+}
+
+.team-card img{
+width:180px;
+height:180px;
+object-fit:cover;
+border-radius:50%;
+margin-bottom:15px;
+border:4px solid #003366;
+}
+
+.team-card h3{
+color:#003366;
+margin-bottom:10px;
+}
+
+.team-card p{
+font-size:15px;
+}
+
+.team-card a{
+color:#003366;
+font-weight:bold;
+text-decoration:none;
+}
+
+.team-card a:hover{
+text-decoration:underline;
+}
+
+/* Navigation Bar */
+
+nav{
+position:fixed;
+top:120px;
+width:100%;
+background:#003366;
+padding:15px 0;
+z-index:1000;
+}
+
+nav ul{
+display:flex;
+justify-content:center;
+list-style:none;
+}
+
+nav ul li{
+margin:0 20px;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+color:#FFD700;
+}
+
+/* Hero Section */
+
+.hero{
+    height:100vh;
+    background:
+        linear-gradient(
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        ),
+        url("Background picture for PATCH website.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.hero-content h1{
+font-size:60px;
+margin-bottom:20px;
+}
+
+.hero-content h2{
+font-size:28px;
+font-weight:300;
+margin-bottom:30px;
+}
+
+.button{
+background:#FFD700;
+padding:12px 25px;
+color:black;
+text-decoration:none;
+font-weight:bold;
+border-radius:5px;
+}
+
+/* Sections */
+
+section{
+padding:80px 10%;
+}
+
+section h2{
+color:white;
+margin-bottom:20px;
+}
+
+footer{
+background:#003366;
+color:white;
+padding:30px;
+text-align:center;
+font-size:14px;
+}
+
+</style>
+</style>
 </head>
-
-
 
 <body>
 <div class="logo-bar">
@@ -26,23 +252,18 @@
 
 <!-- Navigation -->
 
-    <nav>
+<nav>
 <ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="objectives.html">Objectives</a></li>
-<li><a href="research.html">Research</a></li>
-<li><a href="workpackages.html">Work Packages</a></li>
-<li><a href="team.html">Team</a></li>
-<li><a href="publications.html">Publications</a></li>
-<li><a href="news.html">News</a></li>
-<li><a href="gallery.html">Gallery</a></li>
-<li><a href="contact.html">Contact</a></li>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#objectives">Objectives</a></li>
+<li><a href="#workpackages">Work Packages</a></li>
+<li><a href="#team">Team</a></li>
+<li><a href="#gallery">Gallery</a></li>
+<li><a href="#updates">Updates</a></li>
+<li><a href="#contact">Contact</a></li>
 </ul>
 </nav>
-
-
-
 
 <!-- Hero Section -->
 
